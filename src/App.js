@@ -10,7 +10,7 @@ import '@elastic/eui/dist/eui_theme_light.css';
 const App = () => (
   <EuiFlexGroup>
     <EuiFlexItem grow={4}>
-      <EuiPanel>
+      <EuiPanel grow={true}>
         <EuiButton>Foo</EuiButton>
         <h1>hello world</h1>
       </EuiPanel>
