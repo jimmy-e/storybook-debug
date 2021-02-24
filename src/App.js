@@ -1,10 +1,27 @@
 import './App.css';
-import { EuiPanel } from '@elastic/eui';
+import {
+  EuiButton,
+  EuiFlexGroup,
+  EuiFlexItem,
+  EuiPanel,
+} from '@elastic/eui';
+import '@elastic/eui/dist/eui_theme_light.css';
 
 const App = () => (
-  <EuiPanel>
-    <h1>hello world</h1>
-  </EuiPanel>
+  <EuiFlexGroup>
+    <EuiFlexItem grow={4}>
+      <EuiPanel>
+        <EuiButton>Foo</EuiButton>
+        <h1>hello world</h1>
+      </EuiPanel>
+    </EuiFlexItem>
+    <EuiFlexItem grow={6}>
+      <EuiPanel>
+        <EuiButton>Foo</EuiButton>
+        <h1>hello world</h1>
+      </EuiPanel>
+    </EuiFlexItem>
+  </EuiFlexGroup>
 );
 
 export default App;
