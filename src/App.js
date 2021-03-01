@@ -6,6 +6,7 @@ import {
   EuiPanel,
 } from '@elastic/eui';
 import '@elastic/eui/dist/eui_theme_light.css';
+import * as styles from './foo.scss';
 
 const App = () => (
   <EuiFlexGroup>
@@ -13,6 +14,7 @@ const App = () => (
       <EuiPanel grow={true}>
         <EuiButton>Foo</EuiButton>
         <h1>hello world</h1>
+        <div className={styles.div} />
       </EuiPanel>
     </EuiFlexItem>
     <EuiFlexItem grow={6}>
